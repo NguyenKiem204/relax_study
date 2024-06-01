@@ -1,0 +1,66 @@
+/* Reset mặc định cho các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ẩn thanh cuộn */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Định dạng cho body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Định dạng cho video nền và hình nền */
+.back-video, .background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+
+/* Định dạng cho trình phát âm thanh */
+.audio-player {
+    text-align: center;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+/* Định dạng cho các nút điều khiển */
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    color: #6c2779;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #8600b3;
+}
